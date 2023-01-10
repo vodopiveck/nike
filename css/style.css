@@ -1,0 +1,62 @@
+.changingDiv{
+display: flex;
+background-color: aqua;
+width: 800px;
+height: 550px;
+}
+.navbar nav{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar nav ul li{
+    padding-left: 20px;
+}
+.navbar nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media (max-width: 600px){
+    .navbar nav ul{
+      flex-direction: column;
+    }
+    .navbar nav ul li{
+      margin: 10px 0;
+    }
+}
+.navbar{
+    height: 40px;
+}
+.navbar img{
+    height: 40px;
+    float:left;
+}
+.container {
+    background-color: red;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height:550px;
+  }
+.bottomImg1{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+.topImg1{
+    position: absolute;
+    height: 45px;
+    width: 115px;
+    top: 22%;
+    left: 37.5%;
+    z-index: 2;
+  }
